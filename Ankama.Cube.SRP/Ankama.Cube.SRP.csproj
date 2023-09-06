@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\WAVEN\Waven_Data\Managed\Ankama.Cube.SRP.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3A8727C-1D5D-432E-8D15-BF7B04F6B1DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Ankama.Cube.SRP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Ankama.Cube.SRP</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>lib\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>lib\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>lib\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Utilities">
+      <HintPath>lib\Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MinAttribute.cs" />
+    <Compile Include="CubeSRP.cs" />
+    <Compile Include="CameraComparer.cs" />
+    <Compile Include="CubeSRPAsset.cs" />
+    <Compile Include="CubeSRPQualitySettings.cs" />
+    <Compile Include="BlurDataDictionary.cs" />
+    <Compile Include="CubeSRPEditorResources.cs" />
+    <Compile Include="CubeSRPResources.cs" />
+    <Compile Include="PCSSData.cs" />
+    <Compile Include="UIBlurData.cs" />
+    <Compile Include="DestroyUtility.cs" />
+    <Compile Include="Fog.cs" />
+    <Compile Include="FogManager.cs" />
+    <Compile Include="PlanarReflectionUtility.cs" />
+    <Compile Include="SRPPlanarReflection.cs" />
+    <Compile Include="Wind.cs" />
+    <Compile Include="WindManager.cs" />
+    <Compile Include="WindMill.cs" />
+    <Compile Include="WorldGradient.cs" />
+    <Compile Include="IAfterCameraRender.cs" />
+    <Compile Include="IBeforeCameraCulling.cs" />
+    <Compile Include="IBeforeCameraRender.cs" />
+    <Compile Include="IBlurCamera.cs" />
+    <Compile Include="ForwardRenderer.cs" />
+    <Compile Include="PerFrameBuffer.cs" />
+    <Compile Include="PerCameraBuffer.cs" />
+    <Compile Include="ShaderProperties.cs" />
+    <Compile Include="RenderTargetIdentifiers.cs" />
+    <Compile Include="ShaderKeywords.cs" />
+    <Compile Include="PassNames.cs" />
+    <Compile Include="LayerMaskNames.cs" />
+    <Compile Include="Filters.cs" />
+    <Compile Include="LightsHandler.cs" />
+    <Compile Include="ShadowSliceData.cs" />
+    <Compile Include="LightweightShadowUtils.cs" />
+    <Compile Include="LightZone.cs" />
+    <Compile Include="MultiPassRenderer.cs" />
+    <Compile Include="AbstractPass.cs" />
+    <Compile Include="AbstractShadowPass.cs" />
+    <Compile Include="AntiAliasingPass.cs" />
+    <Compile Include="BlitColorBufferToBackBufferPass.cs" />
+    <Compile Include="BlitColorToReadableColorPass.cs" />
+    <Compile Include="BlitDepthToReadableDepthPass.cs" />
+    <Compile Include="BlurType.cs" />
+    <Compile Include="BlurSettings.cs" />
+    <Compile Include="BlurShaderProperties.cs" />
+    <Compile Include="BlurPass.cs" />
+    <Compile Include="ClearColorRenderTargetPass.cs" />
+    <Compile Include="CloudsShadowPass.cs" />
+    <Compile Include="DepthNormalPass.cs" />
+    <Compile Include="DepthPass.cs" />
+    <Compile Include="DesaturateShaderProperties.cs" />
+    <Compile Include="DesaturatePass.cs" />
+    <Compile Include="ShadowConstantBuffer.cs" />
+    <Compile Include="DirectionalShadowConstantBuffer.cs" />
+    <Compile Include="DirectionalShadowPass.cs" />
+    <Compile Include="LocalShadowConstantBuffer.cs" />
+    <Compile Include="LocalShadowPass.cs" />
+    <Compile Include="OpaquePostProcessPass.cs" />
+    <Compile Include="ReflectionShaderProperties.cs" />
+    <Compile Include="PlanarReflectionPass.cs" />
+    <Compile Include="RenderOpaquePass.cs" />
+    <Compile Include="RenderSkyboxPass.cs" />
+    <Compile Include="RenderTransparentPass.cs" />
+    <Compile Include="SetRenderTargetPass.cs" />
+    <Compile Include="SetupCameraPropertyPass.cs" />
+    <Compile Include="PCSSConstantBuffer.cs" />
+    <Compile Include="SetupShaderConstantPass.cs" />
+    <Compile Include="TransparentPostProcessPass.cs" />
+    <Compile Include="CustomAmbientOcclusion.cs" />
+    <Compile Include="CustomAmbientOcclusionRenderer.cs" />
+    <Compile Include="UIBlurQuality.cs" />
+    <Compile Include="ShadowResolution.cs" />
+    <Compile Include="ShadowQuality.cs" />
+    <Compile Include="AAType.cs" />
+    <Compile Include="FXAAQuality.cs" />
+    <Compile Include="FogQuality.cs" />
+    <Compile Include="WindQuality.cs" />
+    <Compile Include="QualityAsset.cs" />
+    <Compile Include="QualityManager.cs" />
+    <Compile Include="ReflectionUtility.cs" />
+    <Compile Include="RenderingData.cs" />
+    <Compile Include="SRPCamera.cs" />
+    <Compile Include="SRPLight.cs" />
+    <Compile Include="SRPUtility.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

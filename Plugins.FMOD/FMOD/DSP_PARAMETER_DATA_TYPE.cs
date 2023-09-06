@@ -1,0 +1,18 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: FMOD.DSP_PARAMETER_DATA_TYPE
+// Assembly: Plugins.FMOD, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: F69CB912-BE3C-4720-BEEF-CCB5E09BA41B
+// Assembly location: E:\WAVEN\Waven_Data\Managed\Plugins.FMOD.dll
+
+namespace FMOD
+{
+  public enum DSP_PARAMETER_DATA_TYPE
+  {
+    DSP_PARAMETER_DATA_TYPE_3DATTRIBUTES_MULTI = -5, // 0xFFFFFFFB
+    DSP_PARAMETER_DATA_TYPE_FFT = -4, // 0xFFFFFFFC
+    DSP_PARAMETER_DATA_TYPE_SIDECHAIN = -3, // 0xFFFFFFFD
+    DSP_PARAMETER_DATA_TYPE_3DATTRIBUTES = -2, // 0xFFFFFFFE
+    DSP_PARAMETER_DATA_TYPE_OVERALLGAIN = -1, // 0xFFFFFFFF
+    DSP_PARAMETER_DATA_TYPE_USER = 0,
+  }
+}

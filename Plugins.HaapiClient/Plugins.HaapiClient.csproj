@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\WAVEN\Waven_Data\Managed\Plugins.HaapiClient.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4A1ECC0-B8E8-4324-9BED-0A5AEFE80182}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Plugins.HaapiClient</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Com.Ankama.Haapi.Swagger</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>lib\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\AccountPublicStatus.cs" />
+    <Compile Include="Model\AccountStatus.cs" />
+    <Compile Include="Model\Almanax.cs" />
+    <Compile Include="Model\AlmanaxEvent.cs" />
+    <Compile Include="Model\AlmanaxMonth.cs" />
+    <Compile Include="Model\AlmanaxZodiac.cs" />
+    <Compile Include="Model\ApiExceptionResponseCode.cs" />
+    <Compile Include="Model\ApiKey.cs" />
+    <Compile Include="Model\ApiTransactionReturn.cs" />
+    <Compile Include="Model\AuthenticatorAccount.cs" />
+    <Compile Include="Model\AuthenticatorDevice.cs" />
+    <Compile Include="Model\AuthenticatorError.cs" />
+    <Compile Include="Model\AuthenticatorHelp.cs" />
+    <Compile Include="Model\AuthenticatorRestoreDevice.cs" />
+    <Compile Include="Model\Avatar.cs" />
+    <Compile Include="Model\AvatarModelAvatar.cs" />
+    <Compile Include="Model\AvatarModelGallery.cs" />
+    <Compile Include="Model\AvatarModelStatus.cs" />
+    <Compile Include="Model\AvatarModelUserAvatar.cs" />
+    <Compile Include="Model\AvatarModelUserGallery.cs" />
+    <Compile Include="Model\CmsArticle.cs" />
+    <Compile Include="Model\CmsArticleExtended.cs" />
+    <Compile Include="Model\CmsBookItem.cs" />
+    <Compile Include="Model\CmsNews.cs" />
+    <Compile Include="Model\CmsNewsItem.cs" />
+    <Compile Include="Model\CmsPollInGame.cs" />
+    <Compile Include="Model\ErrorAccountLogin.cs" />
+    <Compile Include="Model\ErrorAccountSuggest.cs" />
+    <Compile Include="Model\ErrorCodeRestriction.cs" />
+    <Compile Include="Model\ErrorLeaked.cs" />
+    <Compile Include="Model\ErrorRelation.cs" />
+    <Compile Include="Model\ErrorTranslated.cs" />
+    <Compile Include="Model\ExternalAuthAccount.cs" />
+    <Compile Include="Model\ForumPost.cs" />
+    <Compile Include="Model\ForumTopic.cs" />
+    <Compile Include="Model\GameAccount.cs" />
+    <Compile Include="Model\GameActionsAccountAvailable.cs" />
+    <Compile Include="Model\GameActionsAccountConsumed.cs" />
+    <Compile Include="Model\GameActionsActionsAccountCharacterAccountTransfer.cs" />
+    <Compile Include="Model\GameActionsActionsAccountDofusHavenBagPod.cs" />
+    <Compile Include="Model\GameActionsActionsAccountDofusHavenBagRoom.cs" />
+    <Compile Include="Model\GameActionsActionsAccountDofusHavenBagTheme.cs" />
+    <Compile Include="Model\GameActionsActionsAccountDofusItem.cs" />
+    <Compile Include="Model\GameActionsActionsAccountDofusKamas.cs" />
+    <Compile Include="Model\GameActionsActionsAccountDofusPetsItem.cs" />
+    <Compile Include="Model\GameActionsActionsAccountDofusTouchItem.cs" />
+    <Compile Include="Model\GameActionsActionsAccountKard.cs" />
+    <Compile Include="Model\GameActionsActionsAccountKrosmagaBooster.cs" />
+    <Compile Include="Model\GameActionsActionsAccountKrosmagaCard.cs" />
+    <Compile Include="Model\GameActionsActionsAccountKrosmagaCustomisation.cs" />
+    <Compile Include="Model\GameActionsActionsAccountKrosmagaGod.cs" />
+    <Compile Include="Model\GameActionsActionsAccountKrosmagaKamas.cs" />
+    <Compile Include="Model\GameActionsActionsAccountKrosmagaKick.cs" />
+    <Compile Include="Model\GameActionsActionsAccountKrosmagaWheelToken.cs" />
+    <Compile Include="Model\GameActionsActionsAccountKrosmasterFigure.cs" />
+    <Compile Include="Model\GameActionsActionsAccountMeta.cs" />
+    <Compile Include="Model\GameActionsActionsAccountWakfuCharacterRename.cs" />
+    <Compile Include="Model\GameActionsActionsAccountWakfuItem.cs" />
+    <Compile Include="Model\GameActionsActionsDelivered.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredCharacterAccountTransfe.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredDofusHavenBagPod.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredDofusHavenBagRoom.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredDofusHavenBagTheme.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredDofusItem.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredDofusKamas.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredDofusPetsItem.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredDofusTouchItem.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredKard.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredKrosmagaBooster.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredKrosmagaCard.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredKrosmagaCustomisation.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredKrosmagaGod.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredKrosmagaKamas.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredKrosmagaKick.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredKrosmagaWheelToken.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredKrosmasterFigure.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredMeta.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredWakfuCharacterRename.cs" />
+    <Compile Include="Model\GameActionsActionsDeliveredWakfuItem.cs" />
+    <Compile Include="Model\GameActionsActionsMeta.cs" />
+    <Compile Include="Model\GameActionsActionsSimpleCharacterAccountTransfer.cs" />
+    <Compile Include="Model\GameActionsActionsSimpleDofusHavenBagPod.cs" />
+    <Compile Include="Model\GameActionsActionsSimpleDofusHavenBagRoom.cs" />
+    <Compile Include="Model\GameActionsActionsSimpleDofusHavenBagTheme.cs" />
+    <Compile Include="Model\GameActionsActionsSimpleDofusItem.cs" />
+    <Compile Include="Model\GameActionsActionsSimpleDofusKamas.cs" />
+    <Compile Include="Model\GameActionsActionsSimpleDofusPetsItem.cs" />
+    <Compile Include="Model\GameActionsActionsSimpleDofusTouchItem.cs" />
+    <Compile Include="Model\GameActionsActionsSimpleKard.cs" />
+    <Compile Include="Model\GameActionsActionsSimpleKrosmasterFigure.cs" />
+    <Compile Include="Model\GameActionsActionsSimpleWakfuCharacterRename.cs" />
+    <Compile Include="Model\GameActionsActionsSimpleWakfuItem.cs" />
+    <Compile Include="Model\GameActionsActionsTypeCharacterAccountTransfer.cs" />
+    <Compile Include="Model\GameActionsActionsTypeDofusHavenBagPod.cs" />
+    <Compile Include="Model\GameActionsActionsTypeDofusHavenBagRoom.cs" />
+    <Compile Include="Model\GameActionsActionsTypeDofusItem.cs" />
+    <Compile Include="Model\GameActionsActionsTypeDofusKamas.cs" />
+    <Compile Include="Model\GameActionsActionsTypeDofusPetsItem.cs" />
+    <Compile Include="Model\GameActionsActionsTypeDofusTouchItem.cs" />
+    <Compile Include="Model\GameActionsActionsTypeKard.cs" />
+    <Compile Include="Model\GameActionsActionsTypeKrosmasterFigure.cs" />
+    <Compile Include="Model\GameActionsActionsTypeWakfuCharacterRename.cs" />
+    <Compile Include="Model\GameActionsActionsTypeWakfuItem.cs" />
+    <Compile Include="Model\GameActionsCategory.cs" />
+    <Compile Include="Model\GameActionsDefinition.cs" />
+    <Compile Include="Model\GameActionsDescription.cs" />
+    <Compile Include="Model\GameActionsGems.cs" />
+    <Compile Include="Model\GameActionsRestriction.cs" />
+    <Compile Include="Model\GameActionsTitle.cs" />
+    <Compile Include="Model\GameAdminRightResponse.cs" />
+    <Compile Include="Model\GameAdminRightWithApiKeyResponse.cs" />
+    <Compile Include="Model\GameFriendModel.cs" />
+    <Compile Include="Model\HaapiException.cs" />
+    <Compile Include="Model\KardKard.cs" />
+    <Compile Include="Model\KardKardStock.cs" />
+    <Compile Include="Model\KardTicket.cs" />
+    <Compile Include="Model\KardTypeAction.cs" />
+    <Compile Include="Model\KardTypeArticle.cs" />
+    <Compile Include="Model\KardTypeKrosmaster.cs" />
+    <Compile Include="Model\KardTypeOrder.cs" />
+    <Compile Include="Model\KardTypeReference.cs" />
+    <Compile Include="Model\LegalContent.cs" />
+    <Compile Include="Model\MoneyBalance.cs" />
+    <Compile Include="Model\OAuthAccount.cs" />
+    <Compile Include="Model\OAuthKey.cs" />
+    <Compile Include="Model\OAuthProvider.cs" />
+    <Compile Include="Model\PmCount.cs" />
+    <Compile Include="Model\RelationGroup.cs" />
+    <Compile Include="Model\RelationRelation.cs" />
+    <Compile Include="Model\SessionAccount.cs" />
+    <Compile Include="Model\SessionAccountsPaged.cs" />
+    <Compile Include="Model\SessionLogin.cs" />
+    <Compile Include="Model\ShopArticle.cs" />
+    <Compile Include="Model\ShopBuyError.cs" />
+    <Compile Include="Model\ShopBuyResult.cs" />
+    <Compile Include="Model\ShopCategory.cs" />
+    <Compile Include="Model\ShopGondolaHead.cs" />
+    <Compile Include="Model\ShopHighlight.cs" />
+    <Compile Include="Model\ShopHome.cs" />
+    <Compile Include="Model\ShopIAPsListResponse.cs" />
+    <Compile Include="Model\ShopImage.cs" />
+    <Compile Include="Model\ShopMedia.cs" />
+    <Compile Include="Model\ShopMeta.cs" />
+    <Compile Include="Model\ShopMetaGroup.cs" />
+    <Compile Include="Model\ShopOneClickToken.cs" />
+    <Compile Include="Model\ShopOrder.cs" />
+    <Compile Include="Model\ShopPaymentHkCodeSendResult.cs" />
+    <Compile Include="Model\ShopPrice.cs" />
+    <Compile Include="Model\ShopPromo.cs" />
+    <Compile Include="Model\ShopReference.cs" />
+    <Compile Include="Model\ShopReferenceTypeAccountStatus.cs" />
+    <Compile Include="Model\ShopReferenceTypeCharTransfer.cs" />
+    <Compile Include="Model\ShopReferenceTypeDigitalComic.cs" />
+    <Compile Include="Model\ShopReferenceTypeFlag.cs" />
+    <Compile Include="Model\ShopReferenceTypeGameAction.cs" />
+    <Compile Include="Model\ShopReferenceTypeIceGift.cs" />
+    <Compile Include="Model\ShopReferenceTypeKard.cs" />
+    <Compile Include="Model\ShopReferenceTypeKrosmaster.cs" />
+    <Compile Include="Model\ShopReferenceTypeMusic.cs" />
+    <Compile Include="Model\ShopReferenceTypeNothing.cs" />
+    <Compile Include="Model\ShopReferenceTypeOgrine.cs" />
+    <Compile Include="Model\ShopReferenceTypePremium.cs" />
+    <Compile Include="Model\ShopReferenceTypeRecurringVirtualSubscription.cs" />
+    <Compile Include="Model\ShopReferenceTypeTactilewars.cs" />
+    <Compile Include="Model\ShopReferenceTypeVideo.cs" />
+    <Compile Include="Model\ShopReferenceTypeVirtualGift.cs" />
+    <Compile Include="Model\ShopReferenceTypeVirtualSubscriptionLevel.cs" />
+    <Compile Include="Model\SteamAccountApp.cs" />
+    <Compile Include="Model\SteamAccountDLC.cs" />
+    <Compile Include="Model\SteamAccountMeta.cs" />
+    <Compile Include="Model\SteamDLC.cs" />
+    <Compile Include="Model\ThemisModel.cs" />
+    <Compile Include="Model\Token.cs" />
+    <Compile Include="Model\TournamentMatch.cs" />
+    <Compile Include="Model\TournamentMatchResult.cs" />
+    <Compile Include="Model\TournamentRound.cs" />
+    <Compile Include="Model\TournamentTeam.cs" />
+    <Compile Include="Api\IAccountApi.cs" />
+    <Compile Include="Api\AccountApi.cs" />
+    <Compile Include="Api\RAccountApi`1.cs" />
+    <Compile Include="Api\IAlmanaxApi.cs" />
+    <Compile Include="Api\AlmanaxApi.cs" />
+    <Compile Include="Api\RAlmanaxApi`1.cs" />
+    <Compile Include="Api\IApiApi.cs" />
+    <Compile Include="Api\ApiApi.cs" />
+    <Compile Include="Api\RApiApi`1.cs" />
+    <Compile Include="Api\IAuthenticatorApi.cs" />
+    <Compile Include="Api\AuthenticatorApi.cs" />
+    <Compile Include="Api\RAuthenticatorApi`1.cs" />
+    <Compile Include="Api\IAvatarAvatarApi.cs" />
+    <Compile Include="Api\AvatarAvatarApi.cs" />
+    <Compile Include="Api\RAvatarAvatarApi`1.cs" />
+    <Compile Include="Api\IAvatarGalleryApi.cs" />
+    <Compile Include="Api\AvatarGalleryApi.cs" />
+    <Compile Include="Api\RAvatarGalleryApi`1.cs" />
+    <Compile Include="Api\IAvatarGalleryAvatarApi.cs" />
+    <Compile Include="Api\AvatarGalleryAvatarApi.cs" />
+    <Compile Include="Api\RAvatarGalleryAvatarApi`1.cs" />
+    <Compile Include="Api\IAvatarStatusApi.cs" />
+    <Compile Include="Api\AvatarStatusApi.cs" />
+    <Compile Include="Api\RAvatarStatusApi`1.cs" />
+    <Compile Include="Api\IAvatarUserAvatarApi.cs" />
+    <Compile Include="Api\AvatarUserAvatarApi.cs" />
+    <Compile Include="Api\RAvatarUserAvatarApi`1.cs" />
+    <Compile Include="Api\IAvatarUserCurrentAvatarApi.cs" />
+    <Compile Include="Api\AvatarUserCurrentAvatarApi.cs" />
+    <Compile Include="Api\RAvatarUserCurrentAvatarApi`1.cs" />
+    <Compile Include="Api\IAvatarUserGalleryApi.cs" />
+    <Compile Include="Api\AvatarUserGalleryApi.cs" />
+    <Compile Include="Api\RAvatarUserGalleryApi`1.cs" />
+    <Compile Include="Api\ICensoredWordApi.cs" />
+    <Compile Include="Api\CensoredWordApi.cs" />
+    <Compile Include="Api\RCensoredWordApi`1.cs" />
+    <Compile Include="Api\ICmsBooksApi.cs" />
+    <Compile Include="Api\CmsBooksApi.cs" />
+    <Compile Include="Api\RCmsBooksApi`1.cs" />
+    <Compile Include="Api\ICmsItemsApi.cs" />
+    <Compile Include="Api\CmsItemsApi.cs" />
+    <Compile Include="Api\RCmsItemsApi`1.cs" />
+    <Compile Include="Api\ICmsNewsApi.cs" />
+    <Compile Include="Api\CmsNewsApi.cs" />
+    <Compile Include="Api\RCmsNewsApi`1.cs" />
+    <Compile Include="Api\ICmsPollInGameApi.cs" />
+    <Compile Include="Api\CmsPollInGameApi.cs" />
+    <Compile Include="Api\RCmsPollInGameApi`1.cs" />
+    <Compile Include="Api\IDlcApi.cs" />
+    <Compile Include="Api\DlcApi.cs" />
+    <Compile Include="Api\RDlcApi`1.cs" />
+    <Compile Include="Api\IForumApi.cs" />
+    <Compile Include="Api\ForumApi.cs" />
+    <Compile Include="Api\RForumApi`1.cs" />
+    <Compile Include="Api\IGameActionsAccountApi.cs" />
+    <Compile Include="Api\GameActionsAccountApi.cs" />
+    <Compile Include="Api\RGameActionsAccountApi`1.cs" />
+    <Compile Include="Api\IGameActionsCategoryApi.cs" />
+    <Compile Include="Api\GameActionsCategoryApi.cs" />
+    <Compile Include="Api\RGameActionsCategoryApi`1.cs" />
+    <Compile Include="Api\IGameActionsDefinitionApi.cs" />
+    <Compile Include="Api\GameActionsDefinitionApi.cs" />
+    <Compile Include="Api\RGameActionsDefinitionApi`1.cs" />
+    <Compile Include="Api\IGameActionsRestrictionApi.cs" />
+    <Compile Include="Api\GameActionsRestrictionApi.cs" />
+    <Compile Include="Api\RGameActionsRestrictionApi`1.cs" />
+    <Compile Include="Api\IGameApi.cs" />
+    <Compile Include="Api\GameApi.cs" />
+    <Compile Include="Api\RGameApi`1.cs" />
+    <Compile Include="Api\IKardApi.cs" />
+    <Compile Include="Api\KardApi.cs" />
+    <Compile Include="Api\RKardApi`1.cs" />
+    <Compile Include="Api\IKrosmozApi.cs" />
+    <Compile Include="Api\KrosmozApi.cs" />
+    <Compile Include="Api\RKrosmozApi`1.cs" />
+    <Compile Include="Api\ILegalsApi.cs" />
+    <Compile Include="Api\LegalsApi.cs" />
+    <Compile Include="Api\RLegalsApi`1.cs" />
+    <Compile Include="Api\IMoneyApi.cs" />
+    <Compile Include="Api\MoneyApi.cs" />
+    <Compile Include="Api\RMoneyApi`1.cs" />
+    <Compile Include="Api\IPmApi.cs" />
+    <Compile Include="Api\PmApi.cs" />
+    <Compile Include="Api\RPmApi`1.cs" />
+    <Compile Include="Api\IProviderApi.cs" />
+    <Compile Include="Api\ProviderApi.cs" />
+    <Compile Include="Api\RProviderApi`1.cs" />
+    <Compile Include="Api\IRelationsApi.cs" />
+    <Compile Include="Api\RelationsApi.cs" />
+    <Compile Include="Api\RRelationsApi`1.cs" />
+    <Compile Include="Api\IShopApi.cs" />
+    <Compile Include="Api\ShopApi.cs" />
+    <Compile Include="Api\RShopApi`1.cs" />
+    <Compile Include="Api\ISteamApi.cs" />
+    <Compile Include="Api\SteamApi.cs" />
+    <Compile Include="Api\RSteamApi`1.cs" />
+    <Compile Include="Api\IThemisApi.cs" />
+    <Compile Include="Api\ThemisApi.cs" />
+    <Compile Include="Api\RThemisApi`1.cs" />
+    <Compile Include="Api\ITournamentsApi.cs" />
+    <Compile Include="Api\TournamentsApi.cs" />
+    <Compile Include="Api\RTournamentsApi`1.cs" />
+    <Compile Include="IO\Swagger\Client\ApiClient.cs" />
+    <Compile Include="IO\Swagger\Client\ApiException.cs" />
+    <Compile Include="IO\Swagger\Client\Configuration.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,61 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Ankama.AssetManagement.StreamingAssets.StreamingAssetArchiveLoader
+// Assembly: AssetManager, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: FBDDDF1F-801F-467D-A5C9-95D72C757F25
+// Assembly location: E:\WAVEN\Waven_Data\Managed\AssetManager.dll
+
+using UnityEngine.Networking;
+
+namespace Ankama.AssetManagement.StreamingAssets
+{
+  internal sealed class StreamingAssetArchiveLoader : StreamingAssetLoader
+  {
+    private UnityWebRequest m_webRequest;
+
+    public StreamingAssetArchiveLoader(string filePath)
+    {
+      this.error = (AssetManagerError) 0;
+      this.m_webRequest = UnityWebRequest.Get(filePath);
+      this.m_webRequest.SendWebRequest();
+    }
+
+    public override float progress => this.m_webRequest.downloadProgress;
+
+    public override byte[] data
+    {
+      get
+      {
+        if (!this.m_webRequest.isDone || (int) this.error != 0)
+          return (byte[]) null;
+        byte[] data = this.m_webRequest.downloadHandler.data;
+        if (data != null)
+          return data;
+        this.error = (AssetManagerError) 30;
+        return (byte[]) null;
+      }
+    }
+
+    public override bool Update()
+    {
+      if (!this.m_webRequest.isDone)
+        return false;
+      if (this.m_webRequest.isHttpError || this.m_webRequest.isNetworkError)
+        this.error = AssetManagerError.WebRequestError(this.m_webRequest);
+      return true;
+    }
+
+    public override void Cancel()
+    {
+      if (this.m_webRequest.isDone)
+        return;
+      this.error = (AssetManagerError) 50;
+      this.m_webRequest.Abort();
+    }
+
+    public override void Dispose()
+    {
+      this.m_webRequest.Dispose();
+      this.m_webRequest = (UnityWebRequest) null;
+    }
+  }
+}

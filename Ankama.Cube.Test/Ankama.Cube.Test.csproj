@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\WAVEN\Waven_Data\Managed\Ankama.Cube.Test.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{665B6B2A-0156-4091-B895-15C165969CB7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Ankama.Cube.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Animator2D">
+      <HintPath>lib\Animator2D.dll</HintPath>
+    </Reference>
+    <Reference Include="Ankama.Cube">
+      <HintPath>lib\Ankama.Cube.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetManager">
+      <HintPath>lib\AssetManager.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>lib\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>lib\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>lib\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>lib\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>lib\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>lib\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Utilities">
+      <HintPath>lib\Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DraggableIcon.cs" />
+    <Compile Include="FakeCell.cs" />
+    <Compile Include="SpellDraggerTest.cs" />
+    <Compile Include="SpellFXTest.cs" />
+    <Compile Include="SpellHighlight.cs" />
+    <Compile Include="CharacterNavMesh.cs" />
+    <Compile Include="CharacterNavMeshGeneration.cs" />
+    <Compile Include="Ankama\Cube\Test\Decals.cs" />
+    <Compile Include="Ankama\Cube\Test\WeatherTest.cs" />
+    <Compile Include="Ankama\Cube\Test\WorldRain.cs" />
+    <Compile Include="Ankama\Cube\Test\UIManagerTestRuntime.cs" />
+    <Compile Include="Ankama\Cube\Test\UIManagerTestCreationOption.cs" />
+    <Compile Include="Ankama\Cube\Test\UIManagerTestCreationParams.cs" />
+    <Compile Include="Ankama\Cube\Test\UIManagerTestStateContext.cs" />
+    <Compile Include="Ankama\Cube\Test\UIManagerTestUI.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

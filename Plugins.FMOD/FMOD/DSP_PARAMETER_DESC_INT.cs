@@ -1,0 +1,19 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: FMOD.DSP_PARAMETER_DESC_INT
+// Assembly: Plugins.FMOD, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: F69CB912-BE3C-4720-BEEF-CCB5E09BA41B
+// Assembly location: E:\WAVEN\Waven_Data\Managed\Plugins.FMOD.dll
+
+using System;
+
+namespace FMOD
+{
+  public struct DSP_PARAMETER_DESC_INT
+  {
+    public int min;
+    public int max;
+    public int defaultval;
+    public bool goestoinf;
+    public IntPtr valuenames;
+  }
+}

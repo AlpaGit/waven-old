@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\WAVEN\Waven_Data\Managed\Animator2D.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E15A4EC-B2CD-41B5-B589-59934141AB49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Animator2D</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <ApplicationVersion>3.5.1.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Ankama.Animations</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AssetManager">
+      <HintPath>lib\AssetManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine" />
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>lib\UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimatedObjectDefinition.cs" />
+    <Compile Include="Animation.cs" />
+    <Compile Include="AnimationInstance.cs" />
+    <Compile Include="AnimationLabel.cs" />
+    <Compile Include="Animator2D.cs" />
+    <Compile Include="Animator2DInitialisationState.cs" />
+    <Compile Include="Animator2DRenderingMethod.cs" />
+    <Compile Include="Animator2DRuntimeSettings.cs" />
+    <Compile Include="CustomisationSlot.cs" />
+    <Compile Include="GraphicAsset.cs" />
+    <Compile Include="IAnimator2D.cs" />
+    <Compile Include="Graphic.cs" />
+    <Compile Include="Rendering\Animator2DCustomisableRenderer.cs" />
+    <Compile Include="Rendering\Animator2DMultiMaterialRenderer.cs" />
+    <Compile Include="Rendering\Animator2DRendererUtility.cs" />
+    <Compile Include="Rendering\BufferRequest.cs" />
+    <Compile Include="Rendering\BufferState.cs" />
+    <Compile Include="Rendering\DynamicMaterialArray.cs" />
+    <Compile Include="Rendering\IAnimator2DRenderer.cs" />
+    <Compile Include="Rendering\Animator2DRenderer.cs" />
+    <Compile Include="Rendering\CustomisableRenderState.cs" />
+    <Compile Include="Rendering\RenderState.cs" />
+    <Compile Include="Playables\Animator2DPlayableBehaviour.cs" />
+    <Compile Include="Playables\Animator2DPlayableAsset.cs" />
+    <Compile Include="Playables\Animator2DTrackAsset.cs" />
+    <Compile Include="Management\AnimationManager.cs" />
+    <Compile Include="Management\Animator2DManager.cs" />
+    <Compile Include="Management\Animator2DManagerCallbackSource.cs" />
+    <Compile Include="Events\DelayedEvent.cs" />
+    <Compile Include="Events\Animator2DInitialisedEventArgs.cs" />
+    <Compile Include="Events\Animator2DInitialisedEventHandler.cs" />
+    <Compile Include="Events\AnimationLabelChangedEventArgs.cs" />
+    <Compile Include="Events\AnimationLabelChangedEventHandler.cs" />
+    <Compile Include="Events\AnimationStartedEventArgs.cs" />
+    <Compile Include="Events\AnimationStartedEventHandler.cs" />
+    <Compile Include="Events\AnimationLoopedEventArgs.cs" />
+    <Compile Include="Events\AnimationLoopedEventHandler.cs" />
+    <Compile Include="Events\AnimationEndedEventArgs.cs" />
+    <Compile Include="Events\AnimationEndedEventHandler.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

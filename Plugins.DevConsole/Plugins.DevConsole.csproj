@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: F:\WAVEN-old\Waven_Data\Managed\Plugins.DevConsole.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77970CAA-B3CC-4018-BFCF-552E3968F61E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Plugins.DevConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>DevConsole</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ankama.Cube">
+      <HintPath>lib\Ankama.Cube.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>lib\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>lib\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>lib\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>lib\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsoleCommandsFrame.cs" />
+    <Compile Include="VersionCommand.cs" />
+    <Compile Include="HelpCommand.cs" />
+    <Compile Include="HistoryCommand.cs" />
+    <Compile Include="ClearCommand.cs" />
+    <Compile Include="ConsoleCommandAttribute.cs" />
+    <Compile Include="UnityStringEvent.cs" />
+    <Compile Include="ConsoleDaemon.cs" />
+    <Compile Include="DevConsoleUI.cs" />
+    <Compile Include="PlayerAdminCommands\GiveCompanionsCommand.cs" />
+    <Compile Include="PlayerAdminCommands\GiveWeaponsCommand.cs" />
+    <Compile Include="PlayerAdminCommands\SetWeaponLevelCommand.cs" />
+    <Compile Include="PlayerAdminCommands\SetAllWeaponLevelCommand.cs" />
+    <Compile Include="PlayerAdminCommands\SetGenderCommand.cs" />
+    <Compile Include="PlayerAdminCommands\GetClusterStatsCommand.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
